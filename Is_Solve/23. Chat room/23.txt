@@ -1,0 +1,4 @@
+Write a chat room using a named pipe:
+
+A. Start from one end and one-by-one messaging.
+B. Start from both ends and message simultaneously.

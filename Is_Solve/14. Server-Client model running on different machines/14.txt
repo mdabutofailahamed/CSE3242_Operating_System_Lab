@@ -1,0 +1,13 @@
+
+
+	Implement a server-client model to provide services to client processes running on machines different
+	from the server processes.
+	
+	Explain what you experience when:
+
+	>	Server process (single-threaded) tries to provide services to multiple client processes.
+
+	>	Server process (multi-threaded) tries to provide services to multiple client processes.
+
+	>	Server process (single-threaded) tries to provide services to multiple client processes with
+		multiple child processes.

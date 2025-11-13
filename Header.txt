@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+Provides input and output functionalities, such as printf and scanf.
+#include <pthread.h>
+
+Enables the use of the pthreads library for multi-threaded programming.
+#include <stdlib.h>
+
+Includes functions like malloc, free, rand, exit, and more for general-purpose utilities.
+#include <unistd.h>
+
+Provides access to the POSIX operating system API, including functions like sleep, getpid, and fork.
+#include <signal.h>
+
+Allows handling signals, such as SIGINT, SIGKILL, or custom signal handlers.
+
+
+
+int argc:
+
+Argument Count: This parameter specifies the number of command-line arguments passed to the program, including the program's name itself.
+
+char* argv[]:
+
+Argument Vector: This is an array of pointers to strings (character arrays) that represent the command-line arguments.
+Using the same example above, argv will contain:
+argv[0] -> "./program"
+argv[1] -> "arg1"
+argv[2] -> "arg2"
+
+
+
+
+malloc: Stands for "memory allocation" and is used to allocate a block of memory on the heap. It returns a pointer to the beginning of the block.
+count * sizeof(int): This calculates the total amount of memory needed.
+count: Typically a variable indicating how many integers you want to store.
+sizeof(int): This gives the size (in bytes) of one integer in the system. On most systems, this is typically 4 bytes, but it can vary depending on the architecture (e.g., 2 bytes on some older systems).
+(int*): This is a type cast, ensuring that the returned pointer from malloc is treated as a pointer to int (int*). By default, malloc returns a void* (a generic pointer), which can be cast to any type.
+values: This is assumed to be a pointer of type int*, where the dynamically allocated memory will be stored.
+
+argv is an array of strings (character arrays) that stores the command-line arguments passed to your program.
+
+The atoi() function converts a string (C-style) to an integer. It takes a const char* (a string) as an argument and returns an integer.
+
+In C, attributes refer to metadata or properties that you can attach to variables, functions, or types to give the compiler extra information about their behavior
+
+int my_global __attribute__((visibility("hidden")));
+Error Checking: For instance, the format attribute checks argument consistency for format functions.

@@ -1,0 +1,6 @@
+This is a two person chatroom.
+The communication is full-duplex.
+How to run the chatroom?
+  1. Compile the create_pipe.c and run it. You will see two pipe have been created (1stPipe & 2ndPipe)
+  2. Compile and run person1.c and person2.c on separate terminal
+  3. Send message from either terminal (that is person)
